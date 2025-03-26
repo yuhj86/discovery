@@ -37,7 +37,7 @@ $ cargo embed --features v1 --target thumbv6m-none-eabi
 ```
 
 
-您会注意到`cargo-embed`在输出最后一行后会出现块，这是有意的，您不应该关闭它，因为我们需要在此
+您会注意到`cargo-embed`在输出最后一行后会卡在那，这是有意的，您不应该关闭它，因为我们需要在此
 状态下进行下一步：调试它！此外， 您会注意到`cargo build`和`cargo embed`实际上传递了相同的标志，
 这是因为`cargo embed`实际执行构建，然后将生成的二进制文件闪存到芯片上，因此如果您以后想要闪存，可以
 在将来省去`cargo build`步骤。
